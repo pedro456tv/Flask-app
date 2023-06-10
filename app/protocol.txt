@@ -1,0 +1,81 @@
+Protocol from Project
+
+Self-assessment
+---------------
+Task of visualizing data - DONE
+FLASK webpage - DONE
+report - DONE
+
+Briefly about data:
+-----------------
+COLUMNS - description
+
+country-country
+year-year
+sex-gender
+age-range of age(f.e. 35-64 years)
+suicides_no - number of suicides
+population - population of this gender who has this age
+suicides/100k pop - suicides per 100k people
+HDI for year - human development index (removed for too many NaNs)
+gdp_for_year ($) - gdp for year
+gdp_per_capita ($) - gdp per capita
+generation - generation (boomer, gen z,...)
+
+Submitted files:
+-----------------
+report.pdf
+master.csv
+master0.csv
+main.pyc
+database.db
+change_table.py
+proposal.txt
+protocol.txt
+dir __pycache__
+dir templates
+correlation.png
+Untitled5.ipynb
+requirements.txt
+updated_table.sql
+
+Commands used:
+-------------
+
+sqlite3 database.db < updated_table.sql
+pip install -r requirements.txt
+
+export FLASK_APP=change_table.py
+# this is optional, but recommended for debugging
+# If you are running flask on your own machine you might want to use add `--debug` flag in the `flask run` command
+# instead of the FLASK_ENV environment variable.
+export FLASK_ENV=development 
+
+# before running the following, change the port number
+# so that no two users use the same number
+flask run --port=PORT
+
+Observations regarding project:
+------------------------------------------------------------
+Data for the project seemed relevant however since the data were concatenated data from different years and sources,
+I had to be careful wtih handling it. The gpd per capita numbers did not fully correspond with the real time 
+values however it seemed like they were roughly 2x of the real value, so I kept them as they were.
+
+During the process I found out that GPD did not really correlate with the number of suicides per year, although in some countries
+like Republic of Korea, there was an interesting small correlation that with increase of GDP increased also number of suicides.
+However increase in population did correlate but that is obvious. 
+
+Another aspect I found that out of all suicides 
+men commit roughly 76.5% of them, which is a significant number compared to "only" 23.5% with women.
+
+In the aspect of age, most suicides are commited at the age of 35-54 years.
+Most suicides were commited in 1999, most suicides in 1 year were commited in 1994 in Russia it was 61420.
+Most suicides for gender it was male in Russia 1994 22338.
+
+
+List of resources:
+------------------
+https://www.kaggle.com/code/keniiamorph/suicide-rate-analysis
+
+List webpages and other resources used to solve these tasks.
+Do not list the course website and resources recommended directly in the assignment.

@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib.pyplot
+plotly
+plotly.graph_objects
+plotly.express
+plotly.subplots
+plotly.offline
+sqlite3
+flask
+json

@@ -1,0 +1,6 @@
+I will process data from kaggle https://www.kaggle.com/datasets/omkargowda/suicide-rates-overview-1985-to-2021 ,
+the data is about suicide rates and I intend to analyse data from each country and since the data includes gdps
+for year I would like to find whether there is some correlation (either using Python libraries or R )between suicides and gdp for each country.
+Also I would like to display some basic statistics using Flask and Python on a server based 
+website just as we did for homeworks. Not sure about some further analysis but I may include 
+something more throughout the process of working on it. etc..
